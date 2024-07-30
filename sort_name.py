@@ -23,13 +23,15 @@ def sort_names_in_file(file_path):
     # Handle the case where the file is not found
     except FileNotFoundError:
         print(f"Error: {file_path} not found.")
+        exit(1)
 
     # Handle any other exceptions that may occur
     except Exception as e:
         # Print an error message with the exception details
         print(f"An error occurred: {e}")
+        exit(1)
 
 
 if __name__ == '__main__':
     # Prompt the user to enter the file path and call the sort_names_in_file function
-    sort_names_in_file(file_path=input('Enter file path to ".dat" file: '))
+    sort_names_in_file(file_path=input('Enter file path that takes ".dat" file: '))
