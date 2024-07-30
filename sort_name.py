@@ -12,6 +12,7 @@ def sort_names_in_file(file_path):
 
         # Sort the names in alphabetical order
         names.sort()
+        print('Alphabetically sorted names from file: ', names)
 
         # Open the file in write mode and write the sorted names back to the file
         with open(file_path, 'w') as file:
